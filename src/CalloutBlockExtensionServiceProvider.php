@@ -1,6 +1,10 @@
 <?php namespace Pixney\CalloutBlockExtension;
 
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
+use Pixney\CalloutBlockExtension\Block\Contract\BlockRepositoryInterface;
+use Pixney\CalloutBlockExtension\Block\BlockRepository;
+use Anomaly\Streams\Platform\Model\CalloutBlock\CalloutBlockBlocksEntryModel;
+use Pixney\CalloutBlockExtension\Block\BlockModel;
 use Illuminate\Routing\Router;
 
 class CalloutBlockExtensionServiceProvider extends AddonServiceProvider
@@ -93,14 +97,18 @@ class CalloutBlockExtensionServiceProvider extends AddonServiceProvider
      *
      * @type array|null
      */
-    protected $bindings = [];
+    protected $bindings = [
+        CalloutBlockBlocksEntryModel::class => BlockModel::class,
+    ];
 
     /**
      * The addon singleton bindings.
      *
      * @type array|null
      */
-    protected $singletons = [];
+    protected $singletons = [
+        BlockRepositoryInterface::class => BlockRepository::class,
+    ];
 
     /**
      * Additional service providers.

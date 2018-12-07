@@ -1,3 +1,9 @@
 <?php
 
-return [];
+return [
+    'blocks' => [
+        'read',
+        'write',
+        'delete',
+    ],
+];

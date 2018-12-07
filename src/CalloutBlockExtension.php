@@ -2,10 +2,10 @@
 
 namespace Pixney\CalloutBlockExtension;
 
+use Anomaly\BlocksModule\Block\BlockExtension;
 use Pixney\CalloutBlockExtension\Block\BlockModel;
-use Anomaly\Streams\Platform\Addon\Extension\Extension;
 
-class CalloutBlockExtension extends Extension
+class CalloutBlockExtension extends BlockExtension
 {
     protected $provides = 'anomaly.module.blocks::block.callout';
     protected $model    = BlockModel::class;
