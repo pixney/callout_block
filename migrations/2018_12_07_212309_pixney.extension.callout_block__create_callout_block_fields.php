@@ -4,21 +4,15 @@ use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 class PixneyExtensionCalloutBlockCreateCalloutBlockFields extends Migration
 {
-
     /**
      * The addon fields.
      *
      * @var array
      */
     protected $fields = [
-        'name' => 'anomaly.field_type.text',
-        'slug' => [
-            'type' => 'anomaly.field_type.slug',
-            'config' => [
-                'slugify' => 'name',
-                'type' => '_'
-            ],
-        ],
+        'headline'  => 'anomaly.field_type.text',
+        'text'      => 'anomaly.field_type.text',
+        'link'      => 'anomaly.field_type.text',
+        'link_text' => 'anomaly.field_type.text',
     ];
-
 }
