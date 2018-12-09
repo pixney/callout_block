@@ -1,9 +1,13 @@
 {
     "name": "pixney/callout_block-extension",
+    "description": "Simple callout block.",
     "type": "streams-addon",
     "autoload": {
         "psr-4": {
             "Pixney\\CalloutBlockExtension\\": "src/"
         }
+    },
+    "require": {
+        "anomaly/blocks-module": "^1.2.0"
     }
 }
