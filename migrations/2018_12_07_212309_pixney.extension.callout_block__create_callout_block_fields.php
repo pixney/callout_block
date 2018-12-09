@@ -10,9 +10,9 @@ class PixneyExtensionCalloutBlockCreateCalloutBlockFields extends Migration
      * @var array
      */
     protected $fields = [
-        'headline'  => 'anomaly.field_type.text',
-        'text'      => 'anomaly.field_type.text',
-        'link'      => 'anomaly.field_type.text',
-        'link_text' => 'anomaly.field_type.text',
+        'headline'      => 'anomaly.field_type.text',
+        'text'          => 'anomaly.field_type.markdown',
+        'link_url'      => 'anomaly.field_type.url',
+        'link_text'     => 'anomaly.field_type.text',
     ];
 }
