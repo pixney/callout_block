@@ -20,6 +20,7 @@ class PixneyExtensionCalloutBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $assignments = [
+        'classes',
         'headline' => [
             'translatable' => true,
         ],
@@ -29,6 +30,6 @@ class PixneyExtensionCalloutBlockCreateBlocksStream extends Migration
         'link_url',
         'link_text' => [
             'translatable' => true,
-        ]
+        ],
     ];
 }

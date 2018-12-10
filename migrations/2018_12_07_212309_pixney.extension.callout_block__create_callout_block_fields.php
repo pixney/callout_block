@@ -14,5 +14,6 @@ class PixneyExtensionCalloutBlockCreateCalloutBlockFields extends Migration
         'text'          => 'anomaly.field_type.markdown',
         'link_url'      => 'anomaly.field_type.url',
         'link_text'     => 'anomaly.field_type.text',
+        'classes'       => 'anomaly.field_type.text',
     ];
 }
