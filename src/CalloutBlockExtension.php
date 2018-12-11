@@ -9,6 +9,7 @@ class CalloutBlockExtension extends BlockExtension
 {
     protected $provides = 'anomaly.module.blocks::block.callout';
     protected $model    = BlockModel::class;
+    protected $wrapper  = 'pixney.theme.esharawater::blocks/global/wrapper';
 
     public function getView()
     {
