@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Callout Block',
+    'title'       => 'Callout',
     'name'        => 'Callout Block Extension',
-    'description' => ''
+    'description' => 'A section that stands out from other content.'
 ];
