@@ -1,7 +1,12 @@
 <?php
 
+
 return [
-    'gallery' => [
+    'block' => [
+        'fields' => []
+    ],
+    'options' => [
+        'stacked' => true,
         'tabs'    => [
             'content'     => [
                 'title'  => 'Content',
@@ -24,5 +29,5 @@ return [
                 ],
             ]
         ],
-    ],
+    ]
 ];
