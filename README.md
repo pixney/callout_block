@@ -18,7 +18,8 @@
 `composer dump`
 
 ## Install block
-´php artisan addon:install pixney.extension.callout_block´
+
+`php artisan addon:install pixney.extension.callout_block`
 
 ## Copy views - If you have used avviare
 If you have used avviare to setup your theme, you can simply run the following command to copy the necessary view files over to your theme directory:
